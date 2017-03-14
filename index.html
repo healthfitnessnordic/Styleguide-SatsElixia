@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js no-touchevents">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
   <title>Style Guide Boilerplate</title>
@@ -26,10 +26,10 @@
 
   <div class="sg-wrapper sg-clearfix">
     <div id="nav" class="sg-sidebar" role="navigation">
-      <h2 class="sg-h2 sg-subnav-title">About</h2>
+      <h3 class="sg-h2 sg-subnav-title">General</h3>
       <ul class="sg-nav-group">
         <li>
-          <a href="#sg-about">Getting Started</a>
+          <a href="#sg-about">Intro</a>
         </li>
         <li>
           <a href="#sg-colors">Colors</a>
@@ -39,9 +39,9 @@
         </li>
       </ul>
 
-      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-forms-html">forms</a></li><li><a href="#sg-markup-base-headings-1-html">headings 1</a></li><li><a href="#sg-markup-base-hr-html">hr</a></li><li><a href="#sg-markup-base-lists-html">lists</a></li><li><a href="#sg-markup-base-media-html">media</a></li><li><a href="#sg-markup-base-tables-html">tables</a></li><li><a href="#sg-markup-base-text-elements-html">text elements</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-alerts-html">alerts</a></li><li><a href="#sg-markup-patterns-breadcrumbs-html">breadcrumbs</a></li><li><a href="#sg-markup-patterns-feed-grid-html">feed grid</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
+      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h3 id="sg-markup-base" class="sg-h3 sg-title">base</h3><ul class="sg-nav-group"><li><a href="#sg-markup-base-buttons-html">buttons</a></li><li><a href="#sg-markup-base-forms-html">forms</a></li><li><a href="#sg-markup-base-headings-html">headings</a></li><li><a href="#sg-markup-base-hr-html">hr</a></li><li><a href="#sg-markup-base-lists-html">lists</a></li><li><a href="#sg-markup-base-media-html">media</a></li><li><a href="#sg-markup-base-tables-html">tables</a></li><li><a href="#sg-markup-base-text-elements-html">text elements</a></li></ul></li><li class="sg-subnav-parent"><h3 id="sg-markup-patterns" class="sg-h3 sg-title">patterns</h3><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-breadcrumbs-html">breadcrumbs</a></li><li><a href="#sg-markup-patterns-collapse-html">collapse</a></li><li><a href="#sg-markup-patterns-feed-grid-html">feed grid</a></li><li><a href="#sg-markup-patterns-tabs-html">tabs</a></li></ul></li></ul>    </div><!--/.sg-sidebar-->
 
-    <div id="main" class="sg-main" role="main">
+    <div id="main" class="sg-main container" role="main">
         <div id="top" class="sg-header" role="banner">
     <div class="sg-container">
       <h1 class="sg-logo"><img src="https://www.satselixia.no/Images/SATS/logo-no.svg" />
@@ -53,9 +53,8 @@
       <div class="sg-container">
         <div class="sg-info">
           <div class="sg-about sg-section">
-            <h2 id="sg-about" class="sg-h2">Getting Started</h2>
-            <p>A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times. Add some documentation here on how to get started with your new style guide and start customizing this boilerplate to your liking.</p>
-            <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
+            <h2 id="sg-about" class="sg-h2">Intro</h2>
+            <p>Bootstrapped style guide for Sats/Elixia.</p>
           </div><!--/.sg-about-->
 
           <!-- Manually add your UI colors here. -->
@@ -237,7 +236,7 @@
   &lt;/fieldset&gt;
   &lt;input type=&quot;submit&quot; value=&quot;Submit form&quot;&gt;
 &lt;/form&gt;
-&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-headings-1-html" class="sg-h2 sg-title">headings 1</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-headings-html" class="sg-h2 sg-title">headings</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>
 <h2>Heading 2 with <small>small text</small> and a <a href="#">link</a></h2>
 <h3>Heading 3 with <small>small text</small> and a <a href="#">link</a></h3>
 <h4>Heading 4 with <small>small text</small> and a <a href="#">link</a></h4>
@@ -326,28 +325,199 @@
   </tbody>
 </table>
 
-
-
-<h3>Table with side headings</h3>
-<table class="table">
-  <caption>Table Caption</caption>
+<h3>Striped Hover Table</h3>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th id="th1" scope="col">thead th</th>
-      <th id="th2" scope="col">thead th</th>
-      <th id="th3" scope="col">thead th</th>
+      <th colspan="3">thead th</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="th4" scope="row" headers="th1">tbody th</th>
-      <td headers="th2 th4">tbody td</td>
-      <td headers="th3 th4">tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
     </tr>
     <tr>
-      <th id="th5" scope="row" headers="th1">tbody th</th>
-      <td headers="th2 th5">tbody td</td>
-      <td headers="th3 th5">tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Info Table</h3>
+<table class="table table-info">
+  <thead>
+    <tr>
+      <th colspan="3">thead th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+    <tr>
+      <td>tbody td</td>
+      <td>tbody td</td>
+      <td>tbody td</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="hidden-xs">Booking large</h3>
+<table class="table booking-table table-expandable-striped hidden-xs">
+  <tbody>
+    <tr>
+      <th colspan="6" class="day-table-header">Day table header</th>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>19:30</td>
+      <td>60 min</td>
+      <td><a href="#">Cycling</a></td>
+      <td><a href="#">Drammen Sats</a></td>
+      <td>Turid Laila Olsen</td>
+      <td><a type="button" class="btn btn-block btn-primary">
+    Booke
+</a></td>
+    </tr>
+    <tr>
+      <td>19:30</td>
+      <td>60 min</td>
+      <td><a href="#">Cycling</a></td>
+      <td><a href="#">Drammen Sats</a></td>
+      <td>Turid Laila Olsen</td>
+      <td><a type="button" class="btn btn-block btn-primary">
+    Booke
+</a></td>
+    </tr>
+    <tr>
+      <td>19:30</td>
+      <td>60 min</td>
+      <td><a href="#">Cycling</a></td>
+      <td><a href="#">Drammen Sats</a></td>
+      <td>Turid Laila Olsen</td>
+      <td><a type="button" class="btn btn-block btn-primary">
+    Booke
+</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="visible-xs">Booking mobile</h3>
+<table class="table booking-table booking-table-mobile visible-xs">
+  <tbody>
+    <tr>
+      <th colspan="6" class="day-table-header">Day table header</th>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>
+        <div class=" panel panel-default panel-card xs-booking-card">
+            <div class="panel-heading">
+                <h4 class="title ng-binding" itemprop="name">Cycling</h4>
+                <p class="subtitle bold">
+                    <span class="sats-icon-booking-time"></span>
+                    <span class="ng-binding"> <meta itemprop="startDate">19:30</span> –
+                    <span itemprop="duration" class="ng-binding">60</span> min
+                </p>
+                <p class="subtitle ng-binding" itemprop="performer">
+                    <span class="sats-icon-booking-trainer"></span>
+                    Benedikte Nyborg Olsen
+                </p>
+                <p class="subtitle"><span class="sats-icon-pin"></span> <span>Drammen SATS</span></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <a type="button" class="btn btn-block btn-sm btn-primary">Booke</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-default btn-sm btn-block btn-outline">
+                            Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class=" panel panel-default panel-card xs-booking-card">
+            <div class="panel-heading">
+                <h4 class="title ng-binding" itemprop="name">Cycling</h4>
+                <p class="subtitle bold">
+                    <span class="sats-icon-booking-time"></span>
+                    <span class="ng-binding"> <meta itemprop="startDate">19:30</span> –
+                    <span itemprop="duration" class="ng-binding">60</span> min
+                </p>
+                <p class="subtitle ng-binding" itemprop="performer">
+                    <span class="sats-icon-booking-trainer"></span>
+                    Benedikte Nyborg Olsen
+                </p>
+                <p class="subtitle"><span class="sats-icon-pin"></span> <span>Drammen SATS</span></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <a type="button" class="btn btn-block btn-sm btn-primary">Booke</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-default btn-sm btn-block btn-outline">
+                            Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class=" panel panel-default panel-card xs-booking-card">
+            <div class="panel-heading">
+                <h4 class="title ng-binding" itemprop="name">Cycling</h4>
+                <p class="subtitle bold">
+                    <span class="sats-icon-booking-time"></span>
+                    <span class="ng-binding"> <meta itemprop="startDate">19:30</span> –
+                    <span itemprop="duration" class="ng-binding">60</span> min
+                </p>
+                <p class="subtitle ng-binding" itemprop="performer">
+                    <span class="sats-icon-booking-trainer"></span>
+                    Benedikte Nyborg Olsen
+                </p>
+                <p class="subtitle"><span class="sats-icon-pin"></span> <span>Drammen SATS</span></p>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                      <a type="button" class="btn btn-block btn-sm btn-primary">Booke</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-default btn-sm btn-block btn-outline">
+                            Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -380,28 +550,199 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-
-
-&lt;h3&gt;Table with side headings&lt;/h3&gt;
-&lt;table class=&quot;table&quot;&gt;
-  &lt;caption&gt;Table Caption&lt;/caption&gt;
+&lt;h3&gt;Striped Hover Table&lt;/h3&gt;
+&lt;table class=&quot;table table-striped table-hover&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th id=&quot;th1&quot; scope=&quot;col&quot;&gt;thead th&lt;/th&gt;
-      &lt;th id=&quot;th2&quot; scope=&quot;col&quot;&gt;thead th&lt;/th&gt;
-      &lt;th id=&quot;th3&quot; scope=&quot;col&quot;&gt;thead th&lt;/th&gt;
+      &lt;th colspan=&quot;3&quot;&gt;thead th&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;th id=&quot;th4&quot; scope=&quot;row&quot; headers=&quot;th1&quot;&gt;tbody th&lt;/th&gt;
-      &lt;td headers=&quot;th2 th4&quot;&gt;tbody td&lt;/td&gt;
-      &lt;td headers=&quot;th3 th4&quot;&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th id=&quot;th5&quot; scope=&quot;row&quot; headers=&quot;th1&quot;&gt;tbody th&lt;/th&gt;
-      &lt;td headers=&quot;th2 th5&quot;&gt;tbody td&lt;/td&gt;
-      &lt;td headers=&quot;th3 th5&quot;&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;Info Table&lt;/h3&gt;
+&lt;table class=&quot;table table-info&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;3&quot;&gt;thead th&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+      &lt;td&gt;tbody td&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;hidden-xs&quot;&gt;Booking large&lt;/h3&gt;
+&lt;table class=&quot;table booking-table table-expandable-striped hidden-xs&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;6&quot; class=&quot;day-table-header&quot;&gt;Day table header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19:30&lt;/td&gt;
+      &lt;td&gt;60 min&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Cycling&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Drammen Sats&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Turid Laila Olsen&lt;/td&gt;
+      &lt;td&gt;&lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-primary&quot;&gt;
+    Booke
+&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19:30&lt;/td&gt;
+      &lt;td&gt;60 min&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Cycling&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Drammen Sats&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Turid Laila Olsen&lt;/td&gt;
+      &lt;td&gt;&lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-primary&quot;&gt;
+    Booke
+&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;19:30&lt;/td&gt;
+      &lt;td&gt;60 min&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Cycling&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Drammen Sats&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Turid Laila Olsen&lt;/td&gt;
+      &lt;td&gt;&lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-primary&quot;&gt;
+    Booke
+&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;visible-xs&quot;&gt;Booking mobile&lt;/h3&gt;
+&lt;table class=&quot;table booking-table booking-table-mobile visible-xs&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th colspan=&quot;6&quot; class=&quot;day-table-header&quot;&gt;Day table header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;div class=&quot; panel panel-default panel-card xs-booking-card&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h4 class=&quot;title ng-binding&quot; itemprop=&quot;name&quot;&gt;Cycling&lt;/h4&gt;
+                &lt;p class=&quot;subtitle bold&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-time&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ng-binding&quot;&gt; &lt;meta itemprop=&quot;startDate&quot;&gt;19:30&lt;/span&gt; –
+                    &lt;span itemprop=&quot;duration&quot; class=&quot;ng-binding&quot;&gt;60&lt;/span&gt; min
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle ng-binding&quot; itemprop=&quot;performer&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-trainer&quot;&gt;&lt;/span&gt;
+                    Benedikte Nyborg Olsen
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle&quot;&gt;&lt;span class=&quot;sats-icon-pin&quot;&gt;&lt;/span&gt; &lt;span&gt;Drammen SATS&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                      &lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-sm btn-primary&quot;&gt;Booke&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm btn-block btn-outline&quot;&gt;
+                            Info
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;div class=&quot; panel panel-default panel-card xs-booking-card&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h4 class=&quot;title ng-binding&quot; itemprop=&quot;name&quot;&gt;Cycling&lt;/h4&gt;
+                &lt;p class=&quot;subtitle bold&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-time&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ng-binding&quot;&gt; &lt;meta itemprop=&quot;startDate&quot;&gt;19:30&lt;/span&gt; –
+                    &lt;span itemprop=&quot;duration&quot; class=&quot;ng-binding&quot;&gt;60&lt;/span&gt; min
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle ng-binding&quot; itemprop=&quot;performer&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-trainer&quot;&gt;&lt;/span&gt;
+                    Benedikte Nyborg Olsen
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle&quot;&gt;&lt;span class=&quot;sats-icon-pin&quot;&gt;&lt;/span&gt; &lt;span&gt;Drammen SATS&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                      &lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-sm btn-primary&quot;&gt;Booke&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm btn-block btn-outline&quot;&gt;
+                            Info
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;div class=&quot; panel panel-default panel-card xs-booking-card&quot;&gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;
+                &lt;h4 class=&quot;title ng-binding&quot; itemprop=&quot;name&quot;&gt;Cycling&lt;/h4&gt;
+                &lt;p class=&quot;subtitle bold&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-time&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ng-binding&quot;&gt; &lt;meta itemprop=&quot;startDate&quot;&gt;19:30&lt;/span&gt; –
+                    &lt;span itemprop=&quot;duration&quot; class=&quot;ng-binding&quot;&gt;60&lt;/span&gt; min
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle ng-binding&quot; itemprop=&quot;performer&quot;&gt;
+                    &lt;span class=&quot;sats-icon-booking-trainer&quot;&gt;&lt;/span&gt;
+                    Benedikte Nyborg Olsen
+                &lt;/p&gt;
+                &lt;p class=&quot;subtitle&quot;&gt;&lt;span class=&quot;sats-icon-pin&quot;&gt;&lt;/span&gt; &lt;span&gt;Drammen SATS&lt;/span&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;panel-footer&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                      &lt;a type=&quot;button&quot; class=&quot;btn btn-block btn-sm btn-primary&quot;&gt;Booke&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm btn-block btn-outline&quot;&gt;
+                            Info
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -449,49 +790,49 @@
 &lt;p&gt;The &lt;sub&gt;sub element&lt;/sub&gt; example&lt;/p&gt;
 &lt;p&gt;The &lt;sup&gt;sup element&lt;/sup&gt; example&lt;/p&gt;
 &lt;p&gt;The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
-&lt;p&gt;The &lt;var&gt;var element&lt;/var&gt; example&lt;/p&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-alerts-html" class="sg-h2 sg-title">alerts</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- Sample pattern, your site's patterns will be different -->
-<div class="alert alert-warning">
-  <strong>Warning Message!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-</div>
-
-<div class="alert alert-error">
-  <strong>Error Message!</strong> Numquam quos fuga quam suscipit sapiente perferendis magnam.
-</div>
-
-<div class="alert alert-success">
-  <strong>Success Message!</strong> Totam officiis dolorum voluptatibus maxime molestiae iste.
-</div>
-
-<div class="alert alert-info">
-  <strong>Info Message!</strong> Consequatur facere deleniti cumque ducimus maiores nemo.
-</div>
-</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- Sample pattern, your site's patterns will be different --&gt;
-&lt;div class=&quot;alert alert-warning&quot;&gt;
-  &lt;strong&gt;Warning Message!&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-&lt;/div&gt;
-
-&lt;div class=&quot;alert alert-error&quot;&gt;
-  &lt;strong&gt;Error Message!&lt;/strong&gt; Numquam quos fuga quam suscipit sapiente perferendis magnam.
-&lt;/div&gt;
-
-&lt;div class=&quot;alert alert-success&quot;&gt;
-  &lt;strong&gt;Success Message!&lt;/strong&gt; Totam officiis dolorum voluptatibus maxime molestiae iste.
-&lt;/div&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-  &lt;strong&gt;Info Message!&lt;/strong&gt; Consequatur facere deleniti cumque ducimus maiores nemo.
-&lt;/div&gt;
-</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-breadcrumbs-html" class="sg-h2 sg-title">breadcrumbs</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- Sample pattern, your site's patterns will be different -->
-<ul class="breadcrumb">
-  <li><a href="#">Home</a> <span class="divider">/</span></li>
-  <li><a href="#">Library</a> <span class="divider">/</span></li>
-  <li class="active">Data</li>
-</ul></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- Sample pattern, your site's patterns will be different --&gt;
-&lt;ul class=&quot;breadcrumb&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt; &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
-  &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
-&lt;/ul&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-feed-grid-html" class="sg-h2 sg-title">feed grid</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="container">
+&lt;p&gt;The &lt;var&gt;var element&lt;/var&gt; example&lt;/p&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-breadcrumbs-html" class="sg-h2 sg-title">breadcrumbs</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><!-- Sample pattern, your site's patterns will be different -->
+<ol class="breadcrumb ng-scope">
+                <li class="start-page">
+                    <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                </li>
+                        <li class="visible-xs-inline">
+                            <a href="/treningssentre/">Treningssentre</a>
+                        </li>
+                    <li class="hidden-xs-inline">
+                        <a href="/treningssentre/">Treningssentre</a>
+                    </li>
+                        <li class="visible-xs-inline" ng-show="showExtendedBreadcrums != true">
+                            <a ng-click="showExtendedBreadcrums = true;">(...)</a>
+                        </li>
+                        <!-- ngIf: showExtendedBreadcrums -->
+                    <li class="hidden-xs-inline">
+                        <a href="/treningssentre/oslo/">Oslo</a>
+                    </li>
+                <li>
+                    Akersgata SATS
+                </li>
+    </ol></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;!-- Sample pattern, your site's patterns will be different --&gt;
+&lt;ol class=&quot;breadcrumb ng-scope&quot;&gt;
+                &lt;li class=&quot;start-page&quot;&gt;
+                    &lt;a href=&quot;/&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-home&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+                        &lt;li class=&quot;visible-xs-inline&quot;&gt;
+                            &lt;a href=&quot;/treningssentre/&quot;&gt;Treningssentre&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;li class=&quot;hidden-xs-inline&quot;&gt;
+                        &lt;a href=&quot;/treningssentre/&quot;&gt;Treningssentre&lt;/a&gt;
+                    &lt;/li&gt;
+                        &lt;li class=&quot;visible-xs-inline&quot; ng-show=&quot;showExtendedBreadcrums != true&quot;&gt;
+                            &lt;a ng-click=&quot;showExtendedBreadcrums = true;&quot;&gt;(...)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;!-- ngIf: showExtendedBreadcrums --&gt;
+                    &lt;li class=&quot;hidden-xs-inline&quot;&gt;
+                        &lt;a href=&quot;/treningssentre/oslo/&quot;&gt;Oslo&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;li&gt;
+                    Akersgata SATS
+                &lt;/li&gt;
+    &lt;/ol&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-collapse-html" class="sg-h2 sg-title">collapse</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3>NOT YET</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">NOT YET</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-feed-grid-html" class="sg-h2 sg-title">feed grid</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Add your personalized documentation here.</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="no-touchevents">
         <div class="row">
             <div class="col-md-6 ng-scope col-xs-12 col-sm-12 col-lg-6">
                 <div class="panel panel-default panel-card inspiration-card" >
@@ -620,7 +961,7 @@
                 <span class="badge ng-binding">0</span>
             </button>
         </div>
-    </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    </div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;no-touchevents&quot;&gt;
         &lt;div class=&quot;row&quot;&gt;
             &lt;div class=&quot;col-md-6 ng-scope col-xs-12 col-sm-12 col-lg-6&quot;&gt;
                 &lt;div class=&quot;panel panel-default panel-card inspiration-card&quot; &gt;
@@ -749,12 +1090,17 @@
                 &lt;span class=&quot;badge ng-binding&quot;&gt;0&lt;/span&gt;
             &lt;/button&gt;
         &lt;/div&gt;
-    &lt;/div&gt;</code></pre></div></div></div></div></div>      </div><!--/.sg-container-->
+    &lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-tabs-html" class="sg-h2 sg-title">tabs</h2><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3>NOT YET</div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">NOT YET</code></pre></div></div></div></div></div>      </div><!--/.sg-container-->
     </div><!--/.sg-main-->
   </div><!--/.sg-wrapper-->
 
   <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
+
+  <script src="https://www.satselixia.no/bundles/scriptsExternal?v=poSCbip9EVnBTt67ZLTDG_BtRVQzzVxJMhyjjQgQrw01"></script>
+    <script src="https://www.satselixia.no/bundles/scriptsInternal?v=w9qQoIN2zLs0ih1GlNKMz7cNXyq3KpeqQlkZL4kIg1Y1"></script>
+
 </body>
 </html>
 
