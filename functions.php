@@ -93,7 +93,6 @@
   function renderFileExample($content) {
     if ($content != '') {
       echo '<div class="sg-sub-section sg-example">';
-      echo '<h3 class="sg-h3 sg-title">Example</h3>';
       echo $content;
       echo '</div>';
     }

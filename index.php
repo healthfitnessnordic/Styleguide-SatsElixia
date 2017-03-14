@@ -56,7 +56,9 @@
         <div class="sg-info">
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Intro</h2>
-            <p>Bootstrapped style guide for Sats/Elixia.</p>
+            <p>Bootstrapped style guide for Sats/Elixia. More patterns and detailed documentation will come.</p>
+            <p>Variables (less) marked with prefix @.</p>
+            <p>To view source code click the View source button below the elements.</p>
           </div><!--/.sg-about-->
 
           <!-- Manually add your UI colors here. -->

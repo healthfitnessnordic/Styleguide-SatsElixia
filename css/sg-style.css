@@ -163,7 +163,8 @@ body {
 .sg-font1,
 .sg-logo,
 .sg-about p,
-.sg-color-value  {
+.sg-color-value,
+.sg-doc p  {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
 }
@@ -388,7 +389,7 @@ body {
 ---------------------------------------------------------------------------- */
 .sg-section {
   margin-bottom: 32px; /* For older browsers */
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* Colors
@@ -478,7 +479,8 @@ body {
 ---------------------------------------------------------------------------- */
 .sg-doc {
   border-bottom: 1px solid #ddd;
-  margin-bottom: 1em;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .sg-markup-controls {
