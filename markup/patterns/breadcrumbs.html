@@ -1,0 +1,22 @@
+<!-- Sample pattern, your site's patterns will be different -->
+<ol class="breadcrumb ng-scope">
+                <li class="start-page">
+                    <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                </li>
+                        <li class="visible-xs-inline">
+                            <a href="/treningssentre/">Treningssentre</a>
+                        </li>
+                    <li class="hidden-xs-inline">
+                        <a href="/treningssentre/">Treningssentre</a>
+                    </li>
+                        <li class="visible-xs-inline" ng-show="showExtendedBreadcrums != true">
+                            <a ng-click="showExtendedBreadcrums = true;">(...)</a>
+                        </li>
+                        <!-- ngIf: showExtendedBreadcrums -->
+                    <li class="hidden-xs-inline">
+                        <a href="/treningssentre/oslo/">Oslo</a>
+                    </li>
+                <li>
+                    Akersgata SATS
+                </li>
+    </ol>
