@@ -264,7 +264,9 @@ body {
        -o-transition: all .15s ease-in;
           transition: all .15s ease-in;
 }
-
+.sg-nav-group .sg-hash-link {
+  display: none;
+}
 .sg-nav-group a:hover,
 .sg-nav-group a:focus {
   background: #565656;
@@ -309,7 +311,12 @@ body {
 .sg-about p {
   font-size: 1.1em;
 }
-
+h1 + .sg-hash-link {
+  display: none;
+}
+.sg-title {
+  padding-right: 2.5rem;
+}
 
 /* Buttons
 ---------------------------------------------------------------------------- */
@@ -390,6 +397,12 @@ body {
 .sg-section {
   margin-bottom: 32px; /* For older browsers */
   margin-bottom: 5rem;
+  position: relative;
+}
+.sg-hash-link {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* Colors

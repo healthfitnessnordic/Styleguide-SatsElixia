@@ -2,6 +2,8 @@
 
 Based on Brett Jankord's [Style Guide Boilerplate](http://brettjankord.com/projects/style-guide-boilerplate/)
 
+No dependencies. 
+
 ### Running the app
 
 You can run the application with PHP's built in web server. Simply run the following command:

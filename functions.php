@@ -47,7 +47,7 @@
     $id = str_replace($unwantedChars, "-", $path);
 
     if ($parent) {
-      echo '<'.$parent.' id="sg-'.$id.'" class="sg-'.$parent.' sg-title">'.$filename.'</'.$parent.'>';
+      echo '<'.$parent.' id="sg-'.$id.'" class="sg-'.$parent.' sg-title">'.$filename.'</'.$parent.'>', '<a class="sg-hash-link" href="#sg-'.$id.'"><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a>';
     } else {
       echo '<a href="#sg-'.$id.'">'.$filename.'</a>';
     }
