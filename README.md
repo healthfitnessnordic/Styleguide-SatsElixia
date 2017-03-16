@@ -1,4 +1,4 @@
-# Styleguide-SatsElixia Alt version
+# Styleguide-SatsElixia
 
 Based on Brett Jankord's [Style Guide Boilerplate](http://brettjankord.com/projects/style-guide-boilerplate/)
 
