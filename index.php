@@ -59,6 +59,7 @@
             <p>Bootstrapped style guide for Sats/Elixia. More patterns and detailed documentation will come.</p>
             <p>Variables (less) marked with prefix @.</p>
             <p>To view source code click the View source button below the elements.</p>
+            <p>If you have any questions contact Svein Erik at Making Waves.</p>
           </div><!--/.sg-about-->
 
           <!-- Manually add your UI colors here. -->
