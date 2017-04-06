@@ -57,8 +57,8 @@
     $content = file_get_contents($path);
     echo '<div class="sg-section">';
     renderTitleFromPath($path, 'h2');
-    renderFileDoc($path);
     renderFileExample($content);
+    renderFileDoc($path);
     renderFileSource($content);
     echo '</div>';
   }
@@ -75,6 +75,7 @@
     if (is_readable($doc)) {
       echo '<div class="sg-sub-section sg-doc">';
       echo '<div class="markdown-body">';
+      echo '<p class="sg-doc-h h3">Documentation</p>';
       echo $Parsedown->text(file_get_contents($doc));
       echo '</div>';
       echo '</div>';

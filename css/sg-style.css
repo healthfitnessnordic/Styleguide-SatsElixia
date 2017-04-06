@@ -159,15 +159,6 @@ body {
 /* Fonts
 ---------------------------------------------------------------------------- */
 
-/* SG Font 1 */
-.sg-font1,
-.sg-logo,
-.sg-about p,
-.sg-color-value,
-.sg-doc p  {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-}
 
 /* SG Font 2 */
 .sg-font2,
@@ -343,6 +334,8 @@ h1 + .sg-hash-link {
 /* Show specific buttons we cut the mustard */
 .sg-enhanced .sg-btn--source {
   display: block;
+  font-family: Menlo, monospace;
+  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 1025px) {
@@ -490,10 +483,24 @@ h1 + .sg-hash-link {
 
 /* Markup
 ---------------------------------------------------------------------------- */
+.sg-example {
+  margin-bottom: 8rem;
+}
 .sg-doc {
+  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 4rem;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+}
+.sg-doc p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+.sg-doc p.sg-doc-h {
+  font-size: 21px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sg-markup-controls {
@@ -538,21 +545,11 @@ h1 + .sg-hash-link {
   width: 100%;
 }
 
-/* Videos
+
+
+/* Overrides
 ---------------------------------------------------------------------------- */
-.sg-video {
-  height: 0;
-  padding-top: 56.25%;
-  position: relative;
+.sg-section .filter-container {
+  max-width: 100%;
 }
 
-.sg-video video {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}

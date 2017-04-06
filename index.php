@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="css/sg-style.css">
   <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
 
-  <!-- https://github.com/sindresorhus/github-markdown-css -->
-  <link rel="stylesheet" href="css/github-markdown.css">
-
   <!-- Replace below stylesheet with your own stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -57,8 +54,7 @@
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Intro</h2>
             <p>Bootstrapped style guide for Sats/Elixia. More patterns and detailed documentation will come.</p>
-            <p>Variables (less) marked with prefix @.</p>
-            <p>To view source code click the View source button below the elements.</p>
+            <p>Variables (less) marked with prefix @. To view source code click the View source button below the elements.</p>
             <p>If you have any questions contact Svein Erik at Making Waves.</p>
           </div><!--/.sg-about-->
 
@@ -143,6 +139,7 @@
   <!--[if gt IE 8]><!--><script src="vendor/prism/prism.js"></script><!--<![endif]-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/sg-scripts.js"></script>
+  <script src="js/modernizr-custom.js"></script>
   <script src="https://hfnstyle.herokuapp.com/bundles/js-external.js"></script>
   <script src="https://hfnstyle.herokuapp.com/bundles/js-internal.js"></script>
 
